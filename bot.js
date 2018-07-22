@@ -1,3 +1,4 @@
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
  const prefix = "$";
@@ -86,7 +87,9 @@ if(!mention) return message.reply("منشن شخص");
 
 acRoom.send(`**${mention} تم رفضك للاسف**`)
 }
+
+
+
+client.login(process.env.BOT_TOKEN)
+})
 });
-
-
-client.login(process.env.BOT_TOKEN);})
